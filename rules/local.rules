@@ -1,0 +1,11 @@
+
+# Secure local IDS mini project
+# These are detection examples, not proof of a successful attack.
+
+alert icmp any any -> $HOME_NET any (msg:"IDS ICMP traffic detected"; sid:1000001; rev:1;)
+
+alert tcp any any -> $HOME_NET 22 (msg:"IDS SSH connection attempt detected"; flags:S; sid:1000002; rev:1;)
+
+alert tcp any any -> $HOME_NET 80 (msg:"IDS HTTP connection attempt detected"; flags:S; sid:1000003; rev:1;)
+
+alert tcp any any -> $HOME_NET 443 (msg:"IDS HTTPS connection attempt detected"; flags:S; sid:1000004; rev:1;)

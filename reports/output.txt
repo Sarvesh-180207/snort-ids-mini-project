@@ -1,0 +1,29 @@
+
+PROJECT: INTRUSION DETECTION SYSTEM USING SNORT
+SUBJECT: NETWORK SECURITY
+
+OBJECTIVE
+Demonstrate network traffic detection using Snort rules and display
+recorded alert events in a local Flask dashboard.
+
+SAMPLE DASHBOARD TEST
+Total sample alerts: 2
+Protocols represented: ICMP, TCP
+
+SAMPLE EVENT 1
+Message: DEMO: ICMP traffic detected
+Protocol: ICMP
+Rule ID: 1:1000001:1
+
+SAMPLE EVENT 2
+Message: DEMO: HTTP connection attempt detected
+Protocol: TCP
+Rule ID: 1:1000003:1
+
+EXPECTED RESULT
+The dashboard displays two illustrative records and counts the
+protocols represented in those records.
+
+IMPORTANT
+These are demonstration records, not measured Snort detections.
+Real detection results must be captured during testing with Snort.
